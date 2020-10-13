@@ -12,7 +12,7 @@ ConVar g_HostnameCvar;
 
 char g_cMapName[128];
 
-#define BAN_MSG "{\"username\": \"{BOTNAME}\",\"content\": \"A ban has been issued for {INFRACTION} on {HOSTNAME}\",\"attachments\": [{\"color\": \"{COLOR}\",\"title\": \"KZ Stats Online\",\"title_link\": \"http://kztimerglobal.com/api/v2.0/bans?steamid64={STEAMID}\",\"fields\": [{\"title\": \"Player\",\"value\": \"[{PLAYER}](https://steamcommunity.com/profiles/{STEAMID})\",\"short\": true},{\"title\": \"Map\",\"value\": \"{MAP}\",\"short\": true},{\"title\": \"Notes\",\"value\": \"{NOTES}\",\"short\": true},{\"title\": \"Stats\",\"value\": \"{STATS}\",\"short\": true},{\"title\": \"Time\",\"value\": \"{TIME}\",\"short\": true}],\"footer\": \"footer_icon\": \"https://snksrv.com/kzlogos.png\",\"ts\": \"{TIMESTAMP}\"}]}"
+#define BAN_MSG "{\"username\": \"{BOTNAME}\",\"content\": \"A ban has been issued for {INFRACTION} on {HOSTNAME}\",\"attachments\": [{\"color\": \"{COLOR}\",\"title\": \"Global API Player Check\",\"title_link\": \"http://kztimerglobal.com/api/v2.0/bans?steamid64={STEAMID}\",\"fields\": [{\"title\": \"Player\",\"value\": \"[{PLAYER}](https://steamcommunity.com/profiles/{STEAMID})\",\"short\": true},{\"title\": \"Map\",\"value\": \"{MAP}\",\"short\": true},{\"title\": \"Notes\",\"value\": \"{NOTES}\",\"short\": true},{\"title\": \"Stats\",\"value\": \"{STATS}\",\"short\": true},{\"title\": \"Time\",\"value\": \"{TIME}\",\"short\": true}],\"footer\": \"footer_icon\": \"https://snksrv.com/kzlogos.png\",\"ts\": \"{TIMESTAMP}\"}]}"
 
 
 public Plugin myinfo =
@@ -28,8 +28,8 @@ public void OnPluginStart()
 {
 	g_cvWebHookUrl = CreateConVar("kz_gokzban_discord_webhook", "GOKZ Ban", "Key value of webhook in discord.cfg", FCVAR_PROTECTED);
 	g_cvClientName = CreateConVar("kz_gokzban_discord_name", "GOKZ Bans", "Name of the bot");
-	g_cvAnnounceCheat = CreateConVar("kz_gokzban_discord_cheat", "1", "Announce Cheat bans to Discord");
-	g_cvAnnounceMacro = CreateConVar("kz_gokzban_discord_macro", "1", "Announce Macro bans to Discord");
+	g_cvAnnounceCheat = CreateConVar("kz_gokzban_discord_cheat", "1", "Enable/Disable announcement of cheat bans to Discord");
+	g_cvAnnounceMacro = CreateConVar("kz_gokzban_discord_macro", "1", "Enable/Disable announcement of macro bans to Discord");
 	g_cvCheatEmbedColor = CreateConVar("kz_gokzban_discord_cheatcolor", "#FF0000", "Embed hex color for cheat bans");
 	g_cvMacroEmbedColor = CreateConVar("kz_gokzban_discord_macrocolor", "#FF6400", "Embed hex color for macro bans");
 

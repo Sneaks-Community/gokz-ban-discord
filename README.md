@@ -8,7 +8,7 @@ Discord notifier for GOKZ bans. This posts a webhook to a channel of your choosi
 ## ConVars
 `kz_gokzban_discord_webhook` - Key value of webhook in discord.cfg  
 `kz_gokzban_discord_name` - Name of the bot  
-`kz_gokzban_discord_cheat` - Enable/Disable announce of cheat bans to Discord  
-`kz_gokzban_discord_macro` - Enable/Disable announce of macro bans to Discord  
+`kz_gokzban_discord_cheat` - Enable/Disable announcement of cheat bans to Discord  
+`kz_gokzban_discord_macro` - Enable/Disable announcement of macro bans to Discord  
 `kz_gokzban_discord_cheatcolor` - Embed hex color for cheat bans  
 `kz_gokzban_discord_macrocolor` - Embed hex color for macro bans  
