@@ -12,7 +12,7 @@ ConVar g_HostnameCvar;
 
 char g_cMapName[128];
 
-#define BAN_MSG "{\"username\": \"{BOTNAME}\",\"content\": \"A ban has been issued for {INFRACTION} on {HOSTNAME}\",\"attachments\": [{\"color\": \"{COLOR}\",\"title\": \"Global API Player Check\",\"title_link\": \"http://kztimerglobal.com/api/v2.0/bans?steamid64={STEAMID}\",\"fields\": [{\"title\": \"Player\",\"value\": \"[{PLAYER}](https://steamcommunity.com/profiles/{STEAMID})\",\"short\": true},{\"title\": \"Map\",\"value\": \"{MAP}\",\"short\": true},{\"title\": \"Notes\",\"value\": \"{NOTES}\",\"short\": true},{\"title\": \"Stats\",\"value\": \"{STATS}\",\"short\": true},{\"title\": \"Time\",\"value\": \"{TIME}\",\"short\": true}],\"footer_icon\": \"https://snksrv.com/kzlogos.png\",\"ts\": \"{TIMESTAMP}\"}]}"
+#define BAN_MSG "{\"username\": \"{BOTNAME}\",\"content\": \"A ban has been issued for {INFRACTION} on {HOSTNAME}\",\"attachments\": [{\"color\": \"{COLOR}\",\"title\": \"Global API Player Check\",\"title_link\": \"http://kztimerglobal.com/api/v2.0/bans?steamid64={STEAMID}\",\"fields\": [{\"title\": \"Player\",\"value\": \"[{PLAYER}](https://steamcommunity.com/profiles/{STEAMID})\",\"short\": true},{\"title\": \"Map\",\"value\": \"{MAP}\",\"short\": true},{\"title\": \"Notes\",\"value\": \"{NOTES}\",\"short\": true},{\"title\": \"Stats\",\"value\": \"{STATS}\",\"short\": true},\"footer_icon\": \"https://snksrv.com/kzlogos.png\",\"ts\": \"{TIMESTAMP}\"}]}"
 
 
 public Plugin myinfo =
